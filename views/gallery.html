@@ -1,0 +1,19 @@
+<div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h1 class="page-header">Thumbnail Gallery</h1>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-xs-1 thumb" ng-repeat="key in mygallery">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" ng-src="{{key.picture}}" width="100%" alt="">
+                    <p>name:{{key.name}}</p>
+                    <p>Company:{{key.company}}</p>
+                </a>
+            </div>
+            
+        </div>
+
+        <hr>
