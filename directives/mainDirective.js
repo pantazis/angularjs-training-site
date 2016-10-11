@@ -4,7 +4,7 @@ var myApp = angular.module("app", ['ui.router']);
 
 myApp.controller('httpreqest', function ($scope,$http) {
     
-    $http.get("https://pantazis.github.io/angularjs-training-site/assets/json/article.json")
+    $http.get("/assets/json/article.json")
      //$http.get("../assets/json/article.json")
     .then(function(response) {
         $scope.myWelcome = response.data;
