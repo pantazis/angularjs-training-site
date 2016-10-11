@@ -12,7 +12,7 @@ myApp.controller('httpreqest', function ($scope,$http) {
     });
 });
 myApp.controller('gallery', function ($scope,$http) {
-    $http.get("/assets/json/gallery.json")
+    $http.get("assets/json/gallery.json")
     //$http.get("../assets/json/gallery.json")
     .then(function(response) {
         $scope.mygallery = response.data;
