@@ -3,14 +3,17 @@ var myApp = angular.module("app", ['ui.router']);
 
 
 myApp.controller('httpreqest', function ($scope,$http) {
-    $http.get("../assets/json/article.json")
+	
+    $http.get("https://pantazis.github.io/assets/json/article.json")
+	 //$http.get("../assets/json/article.json")
     .then(function(response) {
         $scope.myWelcome = response.data;
         console.log(response.data);
     });
 });
 myApp.controller('gallery', function ($scope,$http) {
-    $http.get("../assets/json/gallery.json")
+    $http.get("https://pantazis.github.io/assets/json/gallery.json")
+	//$http.get("../assets/json/gallery.json")
     .then(function(response) {
         $scope.mygallery = response.data;
         console.log(response.data);
