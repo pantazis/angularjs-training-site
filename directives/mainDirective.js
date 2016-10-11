@@ -43,7 +43,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
         })
         .state('Gallery', {
             url: "/Gallery",
-            templateUrl: 'views/Gallery.html',
+            templateUrl: 'views/gallery.html',
             controller: 'gallery'
         });
 
